@@ -1,0 +1,203 @@
+#work {
+    background: none;
+    background-color: $primary-color;
+
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .txt-type {
+      color: $secondary-color;
+    };
+
+    .txt-type > .txt {
+      border-right: 0.2rem solid #777;
+    }
+
+    .container-grid {
+        margin-right: 5vw;
+        display: grid;
+        grid-template-areas: 
+        'box1 box2'
+        'box3 box4'
+        'box5 box6'
+        'box7 box8';
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 15vh;
+
+        div {
+          background-color: lighten($primary-color, 6);
+          color: white;
+        }
+        
+
+        .box1 {
+          grid-area: box1;
+          background: linear-gradient(45deg, lighten($tercery-color, 12) 0%,lighten($tercery-color, 8) 50%,  $tercery-color 100%);
+
+          display: flex;
+          flex-direction: row;
+          justify-content: center; 
+          align-items: center;
+
+          .img {
+            width: 80%;
+            margin: auto;
+          
+               
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .box8 {
+          grid-area: box8;
+          background: linear-gradient(45deg, lighten($tercery-color, 12) 0%,lighten($tercery-color, 8) 50%,  $tercery-color 100%);
+          display: flex;
+          flex-direction: row;
+          justify-content: center; 
+          align-items: center;
+          .img {
+            width: 80%;
+            margin: auto;
+            img {
+              width: 100%;
+              margin: auto;
+            } 
+          }
+     
+        }
+
+        .box2 {
+          grid-area: box2;
+          justify-content: justify;
+          padding: 8vw 5vw;
+          @include easeOut;
+        }
+
+        .box7 {
+          grid-area: box7;
+          justify-content: justify;
+          padding: 8vw 5vw;
+          @include easeOut;
+      }
+
+        .box3 {
+            grid-area: box3;
+            justify-content: justify;
+            justify-content: justify;
+            padding: 8vw 5vw;
+        }
+
+        .box4 {
+            grid-area: box4;
+            background: linear-gradient(45deg, lighten($tercery-color, 12) 0%,lighten($tercery-color, 8) 50%,  $tercery-color 100%);
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            align-items: center;
+                        
+            .img {
+              width: 80%;
+              margin: auto;       
+              img {
+                width: 100%;
+                margin: auto;
+              } 
+            }
+       
+        }
+
+        .box5 {
+          grid-area: box5;
+          background: linear-gradient(45deg, lighten($tercery-color, 12) 0%,lighten($tercery-color, 8) 50%,  $tercery-color 100%);
+          display: flex;
+          flex-direction: row;
+          justify-content: center; 
+          align-items: center;
+          .img {
+            width: 80%;
+            margin: auto;
+         
+            img {
+              width: 100%;
+              margin: auto;
+            } 
+          }  
+      }
+
+        .box6 {
+          grid-area: box6;
+          justify-content: justify;
+          padding: 8vw 5vw;
+
+        }
+
+    }
+
+    .container-gallerie1 {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .title-gallerie1{
+        
+        width: 40%;
+        text-align: center;
+        h3 {
+          font-size: 4rem;
+        }
+        .text-secondary {
+          color: $secondary-color;
+          font-size: 4rem;
+        }
+      }
+
+      .container {
+
+        width: 80%;
+        max-width: 560px;
+        margin: auto;
+        margin-right: 3vw;
+        border: lighten($primary-color, 6) solid 6px;
+        background-color: lighten($primary-color, 6);
+        .main-img img, 
+        .imgs img {
+          width: 100%;
+          cursor: pointer;
+        }
+  
+        .imgs {
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-gap:7px;
+        }
+        
+        /* Fade in animation */
+        @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+        }
+
+        .fade-in {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in 1 forwards;
+        }
+
+
+
+      }
+  
+  }
+    
+}
+
+
+
+
+@import 'mobile';

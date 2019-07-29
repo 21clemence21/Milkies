@@ -1,0 +1,222 @@
+#contact {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: set-text-color($secondary-color);
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-contact {
+    color: set-text-color($secondary-color);
+    display: flex;
+
+    flex-direction: row;
+    .contact-right,
+    .contact-left {
+      
+      width: 100%;
+    }
+    .contact-left {
+      #contact {
+        width: 100%;
+        height: 100vh;
+        background-color: #111;
+        overflow: hidden;
+        padding-bottom: 200px;
+       
+      }
+      
+      .section-header {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20vh;
+        margin-bottom: 50px;
+        font: 300 60px 'Oswald', sans-serif;
+        letter-spacing: 6px;
+        color: #fff;
+        margin-bottom: 25px;
+      }
+      
+      .contact-wrapper {
+        margin: 0 auto;
+        padding-top: 20px;
+        position: relative;
+        max-width: 800px;
+     
+      }
+      
+      /* Begin Left Contact Page */
+      .form-horizontal {
+       
+        font-family: 'Lato';
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .form-control, textarea {
+        max-width: 400px;
+        background-color: #111;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      
+      .send-button {
+        margin-top: 15px;
+        height: 34px;
+        width: 400px;
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+      }
+      
+      .button {
+        width: 400px;
+        height: 34px;
+        transition: all .2s ease-in-out;
+      }
+      
+      .send-text {
+        display: block;
+        margin-top: 10px;
+        font: 300 14px 'Lato', sans-serif;
+        letter-spacing: 2px;
+      }
+      
+      .button:hover {
+        transform: translate3d(0px, -29px, 0px);
+      }
+      
+      /* Begin Right Contact Page */
+      .direct-contact-container {
+        max-width: 400px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+      }
+      
+      /* Location, Phone, Email Section */
+      .contact-list {
+        list-style-type: none;
+        margin-left: -30px;
+        padding-right: 20px;
+      }
+      
+      .list-item {
+        line-height: 4;
+        color: #aaa;
+      }
+      
+      .contact-text {
+        font: 300 18px 'Lato', sans-serif;
+        letter-spacing: 1.9px;
+        color: #bbb;
+      }
+      
+
+      /* Begin Media Queries*/
+      @media screen and (max-width: 760px) {
+      
+        .section-header {
+          font-size: 65px;
+        }
+        .direct-contact-container, .form-horizontal {
+          float: none;
+          margin: 10px auto;
+        }  
+        .direct-contact-container {
+          margin-top: 60px;
+          max-width: 300px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content:center;
+          
+        }    
+
+      }
+      
+      @media screen and (max-width: 569px) {
+    
+        .section-header{
+          font-size: 50px;
+        }
+
+        .form-control, textarea {
+          max-width: 340px;
+          margin: 0 auto;
+        }
+        
+        .name, .email, textarea {
+          width: 280px;
+        } 
+
+
+        
+      }
+      
+      @media screen and (max-width: 410px) {
+        .send-button {
+          width: 99%;
+        }
+      }
+    }
+    .contact-right {
+      padding-top: 15vh;
+      background-color: $secondary-color;
+      box-sizing: border-box;
+      width: 100%;
+
+      h2 {
+        font-size: 2.4rem;
+        margin-bottom: 2vh;
+        color: $primary-color;
+        font-weight: 700;
+      }
+
+      h3 {
+        font-size: 2rem;
+        width: 20vw;
+        margin-bottom: 2vh;
+        color: $primary-color;
+        background-color: set-text-color($primary-color);
+        font-weight: 600;
+        padding: 4px 10px;
+        text-align: center;
+        @include easeOut;
+        &:hover {
+          background-color: set-text-color($secondary-color);
+          color: $secondary-color;
+          cursor: pointer;
+        }
+      }
+
+      p {
+        margin-bottom: 5vh;
+      }
+
+      i {
+        color: set-text-color($secondary-color);
+        @include easeOut();
+        padding: 1vw;
+        &:hover {
+          color: set-text-color($primary-color);
+        }
+      }
+
+      .relou {
+        padding-left: 9vw;
+        padding-right: 9vw;
+      }
+    }
+  }
+}
+
+@import "mobile";

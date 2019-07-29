@@ -1,0 +1,103 @@
+#container-faq-box  {
+  position: fixed;
+  top: 85vh;
+  right: 2vw;
+  z-index: 2;
+    
+  #question {
+    background-color: white;
+    padding: 0.5rem;
+    color: $primary-color;
+    border: 7px darken($secondary-color,20) solid;
+    border-radius: 15px;
+    margin-left: 10px;
+    opacity: 0.8;
+    
+    cursor: pointer;
+    i {
+      color: $secondary-color;
+      &.show {
+        color: rgb(13, 17, 13);
+      }
+    }
+    @include easeOut;
+    &:hover {
+      opacity: 1;
+      border-color: darken($secondary-color, 10);
+    }
+
+    &.show {
+      border: 7px green solid;
+      color: green;
+      opacity: 1;
+    }
+    
+  }
+
+  #questions-reponses {
+    position: fixed;
+    right: 6vw;
+    top: 80vh;
+    background-color: white;
+    color: black;
+    height: 1vw;
+    width: 1vw;
+    border-radius: 15px;
+    border: $secondary-color 7px solid;
+    padding: 1rem;
+    transform: translate3D(0, 0, 0);
+    visibility: hidden;
+    overflow-y: hidden;
+    opacity: 0;
+    @include easeOut;
+  
+    
+
+    .accordion {
+      
+      
+      color: $primary-color;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: $secondary-color; 
+      color: set-text-color($secondary-color)
+    }
+    
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    &.show {
+        visibility: visible;
+        transform: translate3d(5%,-100%,0);
+        width: 40vw;
+        height: 40vh;
+        overflow-y: scroll;
+    }
+
+    .reponse-faq {
+      display: none;
+      @include easeOut;
+
+      &.showAnswerFaq {
+        display: block;
+
+      }
+    }
+  }
+
+
+
+}

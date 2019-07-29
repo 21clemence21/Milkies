@@ -1,0 +1,74 @@
+$primary-color:#000000;
+//$text-color: white;
+$secondary-color: #FFCC00;
+$tercery-color: #1A60F2;
+$show-home-image: true;
+$home-image: url(../media/galaxy-infinity-milky-way-orbit-space-stars-1366710-pxhere.com.jpg);
+$background-opacity: 0.2;
+$light-opacity : 1;
+
+
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+@mixin background-all {
+     background-color: $primary-color ;
+}
+
+@mixin background {
+    @if $show-home-image {
+       &#bg-img{
+           background: $home-image;
+           background-attachment: fixed;
+           background-size: cover;
+           &:after {
+               content: '';
+               position: absolute;
+               top: 0;
+               right: 0;
+               width: 100%; 
+               height: 100%;
+               z-index: -1;
+               background: rgba($primary-color,$background-opacity);
+           }
+       }
+    }
+}
+
+// Set Text Color 
+@function set-text-color($color){
+    @if (lightness($color) > 40){
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+// Media Query Mixin
+
+@mixin mediaSm {
+  @media screen  and (max-width: 500px){
+      @content;
+  }
+}
+
+
+@mixin mediaMd {
+    @media screen  and (max-width: 758px){
+        @content;
+    }
+  }
+
+  @mixin mediaLg {
+    @media screen  and (min-width: 760px) and (max-width: 500px){
+        @content;
+    }
+  }
+
+  @mixin mediaXL {
+    @media screen  and (min-width: 1171px){
+        @content;
+    }
+  }

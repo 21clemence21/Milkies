@@ -1,0 +1,115 @@
+#about {
+    * {
+      box-sizing: border-box;
+    }
+    @include background-all();
+    box-sizing: border-box;
+    cursor: url(../media/gallerie1/122867463-click-cursor-icon-cartoon-style.jpg), auto;
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .txt-type {
+        color: $secondary-color;
+    };
+
+    .txt-type > .txt {
+        border-right: 0.2rem solid #777;
+    }
+
+    .image-agence {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 10vw;
+        margin: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        img {
+            width: 100%;
+            border-radius: 50%;
+            border: 3px $secondary-color solid;
+        }
+    }
+    .container-row {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-areas: 
+        
+        'who-we-are engagement our-partners'
+        'description-about description-about description-about';
+        grid-template-columns: repeat(3, 1fr);
+
+        div{
+            background-color: rgba(lighten($primary-color,10), 0.6);
+            text-align: left;
+            font-size: 0.9rem;
+            padding: 15px ;
+            line-height: 1.8rem;
+         
+            border: 2px solid transparent;
+
+
+            @include easeOut();
+
+            &:hover {
+                background-color: darken($tercery-color, 35);
+                border: 2px solid lighten($primary-color,10);
+            }
+
+
+            span{
+                letter-spacing: 0.2rem;
+                font-size: 1.6rem;
+            }
+        }
+
+        .who-we-are {
+          grid-area: who-we-are;
+          @include easeOut;
+
+
+
+        }
+
+        .engagement {
+            grid-area: engagement;
+            justify-content: center;
+
+
+            &.opacity {
+                opacity: $light-opacity;
+            }
+
+        }
+
+        .our-partners {
+            grid-area: our-partners;
+
+        }
+
+        .description-about {
+            grid-area: description-about;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 1vh;
+            
+            p {
+                padding: 1vh 3vw;
+                
+            }
+       
+        }
+
+        .photo {
+            grid-area: photo;
+        }
+
+    }
+
+
+}
+
+@import 'mobile';

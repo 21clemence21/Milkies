@@ -1,0 +1,102 @@
+@import 'config';
+@import 'menu';
+@import 'the-milkies';
+@import 'about';
+@import 'work';
+@import 'contact';
+@import 'chatbox';
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+#black1, #black2, #black3 {
+    background-color: $primary-color;
+}
+
+body {
+    cursor: url(../media/gallerie1/122867463-click-cursor-icon-cartoon-style.jpg), auto;
+
+    @include background;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+//headings 
+
+
+h1,
+h2, 
+h3 {
+    margin: 0; 
+    font-weight: 400;
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    &.sm-heading {
+        margin-bottom: 0.2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color,4), 0.6);
+        width: 40vw;
+    }
+
+    &.sm-sub-heading {
+        margin-bottom: 1rem;
+        padding: 0.4rem 1rem;
+        text-align: justify;
+        background: rgba(lighten($primary-color,4), 0.6);
+        width: 40vw;
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+main {
+    padding: 4rem;
+    height: 100%;
+
+    .icons {
+      margin-top: 1rem;
+
+        a {
+          padding: 0.6rem;
+
+          &:hover{
+            color: $secondary-color;
+            @include easeOut();
+          }
+        }
+    }
+
+    &#home{
+        overflow: hidden;
+        h1{
+            margin-top: 10vh;
+        }
+    }
+
+}
+
+@import 'mobile';
+
