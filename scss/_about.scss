@@ -62,7 +62,7 @@
             font-size: 0.9rem;
             padding: 15px ;
             line-height: 1.8rem;
-         
+            color: set-text-color(lighten($primary-color,30));
             border: 2px solid transparent;
             &.about-day {
                 background-color: rgba(darken($primary-color,10), 0.6);

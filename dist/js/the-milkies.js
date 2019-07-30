@@ -48,3 +48,33 @@ function toggleDayMilkies() {
   })
 
 }
+
+let sunAppear = false;
+
+sun.addEventListener(onclick, toggleDayMilkies)
+
+function toggleDayMilkies() {
+
+    if(!sunAppear) {
+      bodyMilkies.classList.toggle('milkies-day');
+      boxMilkies.forEach (val => {
+         val.classList.add('milkies-day');
+       })
+       NameMilkies.forEach (val => {
+         val.classList.add('milkies-day');
+     })
+        sun.setAttribute("class","fas fa-moon fa-1x");
+        sunAppear = true;
+    } else {
+      bodyMilkies.classList.toggle('milkies-day');
+      boxMilkies.forEach (val => {
+         val.classList.remove('milkies-day');
+       })
+       NameMilkies.forEach (val => {
+         val.classList.remove('milkies-day');
+     })
+      sun.setAttribute("class","fas fa-sun fa-1x");
+      sunAppear = false;
+    }
+
+}

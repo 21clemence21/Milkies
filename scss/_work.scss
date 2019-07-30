@@ -14,7 +14,12 @@
 }
 
 #work {
-
+    .text-secondary {
+      color: $secondary-color;
+      &.text-secondary-day{ 
+          color: $secondary-color-day;
+      };
+  }
     h1 {
         text-align: center;
         font-size: 5rem;

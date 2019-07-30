@@ -489,9 +489,10 @@
             flex-direction: column-reverse;
   }
   #contact .container-contact .contact-left {
-    height: 10%;
+    height: 100%;
   }
   #contact .container-contact .contact-right {
+    height: 100%;
     text-align: left;
   }
   #contact .container-contact .contact-right h2 {
@@ -735,6 +736,7 @@
   font-size: 0.9rem;
   padding: 15px;
   line-height: 1.8rem;
+  color: #fff;
   border: 2px solid transparent;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -890,9 +892,10 @@
             flex-direction: column-reverse;
   }
   #contact .container-contact .contact-left {
-    height: 10%;
+    height: 100%;
   }
   #contact .container-contact .contact-right {
+    height: 100%;
     text-align: left;
   }
   #contact .container-contact .contact-right h2 {
@@ -1076,6 +1079,14 @@
 .work-night.work-day {
   background-color: white;
   color: #000;
+}
+
+#work .text-secondary {
+  color: #FFCC00;
+}
+
+#work .text-secondary.text-secondary-day {
+  color: #862338;
 }
 
 #work h1 {
@@ -1426,9 +1437,10 @@
             flex-direction: column-reverse;
   }
   #contact .container-contact .contact-left {
-    height: 10%;
+    height: 100%;
   }
   #contact .container-contact .contact-right {
+    height: 100%;
     text-align: left;
   }
   #contact .container-contact .contact-right h2 {
@@ -1930,9 +1942,10 @@
             flex-direction: column-reverse;
   }
   #contact .container-contact .contact-left {
-    height: 10%;
+    height: 100%;
   }
   #contact .container-contact .contact-right {
+    height: 100%;
     text-align: left;
   }
   #contact .container-contact .contact-right h2 {
@@ -2219,6 +2232,18 @@ body {
           box-sizing: border-box;
 }
 
+body #sun {
+  cursor: pointer;
+}
+
+body .text-secondary {
+  color: #FFCC00;
+}
+
+body .text-secondary.text-secondary-day {
+  color: #862338;
+}
+
 body #day-button {
   position: fixed;
   top: 40px;
@@ -2383,9 +2408,10 @@ main#home h1 {
             flex-direction: column-reverse;
   }
   #contact .container-contact .contact-left {
-    height: 10%;
+    height: 100%;
   }
   #contact .container-contact .contact-right {
+    height: 100%;
     text-align: left;
   }
   #contact .container-contact .contact-right h2 {

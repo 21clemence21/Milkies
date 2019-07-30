@@ -16,6 +16,18 @@
 
 
 body {
+
+    #sun {
+        cursor: pointer;
+    };
+
+    .text-secondary {
+        color: $secondary-color;
+        &.text-secondary-day{ 
+            color: $secondary-color-day;
+        };
+    }
+
     cursor: url(../media/gallerie1/122867463-click-cursor-icon-cartoon-style.jpg), auto;
 
    

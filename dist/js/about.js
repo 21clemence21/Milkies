@@ -16,11 +16,31 @@ const boxAbout = document.querySelectorAll('.box-about-night');
 console.log(bodyAbout);
 console.log(boxAbout);
 
+const sun = document.querySelector('#sun');
+
+let sunAppear = false;
+
+sun.addEventListener(onclick, toggleDayAbout)
 
 function toggleDayAbout() {
-    console.log('is it working');
-    bodyAbout.classList.toggle('about-day');
-    boxAbout.forEach(val => {
-        val.classList.toggle('about-day');
-    })
+
+    if(!sunAppear) {
+        console.log('is it working');
+        bodyAbout.classList.add('about-day');
+        boxAbout.forEach(val => {
+            val.classList.add('about-day');
+        });
+        sun.setAttribute("class","fas fa-moon fa-2x");
+        sunAppear = true;
+    } else {
+        bodyAbout.classList.remove('about-day');
+        boxAbout.forEach(val => {
+            val.classList.remove('about-day');
+        });
+        sun.setAttribute("class","fas fa-sun fa-2x");
+        sunAppear = false;
+    }
+
+
+
 }

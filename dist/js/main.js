@@ -135,10 +135,3 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-//Parametres pour toggle day (changer l'icone soleil en lune)
-const sun = document.querySelector('.fa-sun');
-sun.addEventListener('click',toggleIcone);
-function toggleIcone(){
-  
-  sun.addClassList.toggle('fa-moon');
-}
