@@ -1,0 +1,5 @@
+.body-home {
+    @include background;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+}

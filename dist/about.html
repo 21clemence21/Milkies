@@ -8,136 +8,143 @@
     <link rel="stylesheet" href="../scss/main.css">
     <title>About Us</title>
 </head>
-<body id="bg-img">
+<body id="bg-im">
+    <div class="about-night">
+        <header>
+                <div class="menu-btn">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>
+
+                <nav class="menu">
+                    <div class="menu-branding">
+                        <div class="portrait"></div>
+                    </div>
+                    <ul class="menu-nav">
+                        <li class="nav-item ">
+                            <a href="index.html" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item current">
+                            <a href="about.html" class="nav-link">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="the-milkies.html" class="nav-link">
+                                The Milkies
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="work.html" class="nav-link nav-work" >
+                                Work
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+
+                <div id="container-faq-box">
+                    <div id="question"> <i class="fas fa-question fa-2x" id="comments"></i>
+                    </div>
+                    <div id="questions-reponses">
+                        <h2 class="title-faq">Frequently Asked Questions</h2>
+            
+                        <button class="accordion">What can you possibly do for me ?</button>
+                        <div class="panel">
+                            <p>I dont know, what do you want me to do ?</p>
+                        </div>
+                        
+                        <button class="accordion">Come on you must know what you can do for me ?</button>
+                        <div class="panel">
+                            <p>Well it's not a big deal but if you could rebuild my website that would be great</p>
+                        </div>
+                        
+                        <button class="accordion">What else ?</button>
+                        <div class="panel">
+                            <p>Come on</p>
+                        </div>
+            
+                        <button class="accordion">Is this the end of the world ?</button>
+                        <div class="panel">
+                            <p>Maybe i dont know it's not my problem</p>
+                        </div>
+                        <button class="accordion">Why ?</button>
+                        <div class="panel">
+                            <p>Fuck Off</p>
+                        </div>
+            
+                    </div>
+                </div>
+
+                <div id="day-button"><i class="fas fa-sun fa-4x" onclick=toggleDayAbout()></i></div>
+
+            </header>
+
+            <main id="about">
+                <h1 class="lg-heading">
+                    About  <span class="txt-type"class="text-secondary"data-wait="300" data-words='["our Team", "our Engagement", "our Partners"]'>Work</span>
+                </h1>
+
+                <div class="image-agence">
+                        <img src="../media/coucou.jpg" alt="">
+
+                </div>
+
+
+                <div class="container-row">
+                
+                    <div class="box-about-night who-we-are">
+                        <h2 class="sm-heading-about">
+                            <span class="text-secondary"> Who are we ?</span>
+                            We are a the Milky Agency. Born in 2017, we believe that an other web industry is possible. 
+                            We've been working with a growing number of clients including real estate agents, banks, eco-responsible companies. 
+                            . <br>
+                        </h2>
+                    </div>
+
+                    <div class="box-about-night engagement">
+                        <h2 class="sm-heading-about">
+                            <span class="text-secondary"> Our engagement.</span>
+                            We believe our clients deserve the best in terms of quality and reliability. We believe in customer satisfaction even though the project is finally sold.
+                            Our clients trusted us and we've been doing good job ever since. 
+                        </h2>
+                    </div>
+
+                    <div class="box-about-night our-partners">
+                        <h2 class="sm-heading-about">
+                            <span class="text-secondary"> Our partners.</span>
+                            We've been inspired by our partners, they chose us and we chose them because we believe they are the future. Our expertise covers strategy, User Experience design, and Search Engine Optimization.
+                        </h2>
+                    </div>
+
+                    <div class="box-about-night description-about">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ducimus alias laborum facere, libero odio eius reiciendis. Vero sit possimus, quis, laboriosam fugit dolorum esse magnam ipsa amet et laborum?Quo nulla numquam nihil rem, totam, doloribus velit iste exercitationem temporibus placeat asperiores a. Delectus illum voluptatum nulla libero autem deleniti. Facilis rem quaerat fuga nobis blanditiis, sequi mollitia molestiae.
+
+                        </p>
+                    </div>
+                </div>
+
+            </main>
+
+            <script src="js/main.js"></script>
+            <script src="js/about.js"></script>
+            <script src="js/typewriter.js"></script>
+
+
+    </div>
    
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item ">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item current">
-                    <a href="about.html" class="nav-link">
-                        About Us
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="the-milkies.html" class="nav-link">
-                        The Milkies
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link nav-work" >
-                        Work
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                       Contact
-                    </a>
-                </li>
-
-
-            </ul>
-        </nav>
-
-        <div id="container-faq-box">
-            <div id="question"> <i class="fas fa-question fa-2x" id="comments"></i>
-            </div>
-            <div id="questions-reponses">
-                <h2 class="title-faq">Frequently Asked Questions</h2>
-  
-                <button class="accordion">What can you possibly do for me ?</button>
-                <div class="panel">
-                  <p>I dont know, what do you want me to do ?</p>
-                </div>
-                
-                <button class="accordion">Come on you must know what you can do for me ?</button>
-                <div class="panel">
-                  <p>Well it's not a big deal but if you could rebuild my website that would be great</p>
-                </div>
-                
-                <button class="accordion">What else ?</button>
-                <div class="panel">
-                  <p>Come on</p>
-                </div>
-  
-                <button class="accordion">Is this the end of the world ?</button>
-                <div class="panel">
-                  <p>Maybe i dont know it's not my problem</p>
-                </div>
-                <button class="accordion">Why ?</button>
-                <div class="panel">
-                  <p>Fuck Off</p>
-                </div>
-  
-            </div>
-        </div>
-
-    </header>
-
-    <main id="about">
-        <h1 class="lg-heading">
-            About  <span class="txt-type"class="text-secondary"data-wait="300" data-words='["our Team", "our Engagement", "our Partners"]'>Work</span>
-        </h1>
-
-        <div class="image-agence">
-                <img src="../media/coucou.jpg" alt="">
-
-        </div>
-
-
-        <div class="container-row">
-     
-          <div class="who-we-are">
-            <h2 class="sm-heading-about">
-              <span class="text-secondary"> Who are we ?</span>
-              We are a the Milky Agency. Born in 2017, we believe that an other web industry is possible. 
-              We've been working with a growing number of clients including real estate agents, banks, eco-responsible companies. 
-              . <br>
-            </h2>
-          </div>
-
-          <div class="engagement">
-            <h2 class="sm-heading-about">
-                <span class="text-secondary"> Our engagement.</span>
-                We believe our clients deserve the best in terms of quality and reliability. We believe in customer satisfaction even though the project is finally sold.
-                Our clients trusted us and we've been doing good job ever since. 
-            </h2>
-          </div>
-
-          <div class="our-partners">
-                <h2 class="sm-heading-about">
-                    <span class="text-secondary"> Our partners.</span>
-                    We've been inspired by our partners, they chose us and we chose them because we believe they are the future. Our expertise covers strategy, User Experience design, and Search Engine Optimization.
-                </h2>
-          </div>
-
-          <div class="description-about">
-              <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ducimus alias laborum facere, libero odio eius reiciendis. Vero sit possimus, quis, laboriosam fugit dolorum esse magnam ipsa amet et laborum?Quo nulla numquam nihil rem, totam, doloribus velit iste exercitationem temporibus placeat asperiores a. Delectus illum voluptatum nulla libero autem deleniti. Facilis rem quaerat fuga nobis blanditiis, sequi mollitia molestiae.
-
-              </p>
-          </div>
-        </div>
-
-    </main>
-
-    <script src="js/main.js"></script>
-    <script src="js/about.js"></script>
-    <script src="js/typewriter.js"></script>
+   
 </body>
 </html>

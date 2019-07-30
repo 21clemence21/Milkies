@@ -1,4 +1,5 @@
 @import 'config';
+@import 'index';
 @import 'menu';
 @import 'the-milkies';
 @import 'about';
@@ -12,21 +13,22 @@
 
 }
 
-#black1, #black2, #black3 {
-    background-color: $primary-color;
-}
+
 
 body {
     cursor: url(../media/gallerie1/122867463-click-cursor-icon-cartoon-style.jpg), auto;
 
-    @include background;
-    background: $primary-color;
-    color: set-text-color($primary-color);
+   
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
     box-sizing: border-box;
+    #day-button {
+        position: fixed;
+        top: 40px;
+        left: 40px;
+    }
 }
 
 //headings 
@@ -75,6 +77,8 @@ header {
 main {
     padding: 4rem;
     height: 100%;
+
+
 
     .icons {
       margin-top: 1rem;

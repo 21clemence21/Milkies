@@ -1,6 +1,19 @@
+.work-night {
+  @include background-night();
+  color: set-text-color($primary-color);
+  .day-button{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  &.work-day{
+      @include background-day();
+      color: set-text-color($day-color);
+  }
+}
+
 #work {
-    background: none;
-    background-color: $primary-color;
 
     h1 {
         text-align: center;

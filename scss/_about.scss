@@ -1,8 +1,22 @@
+.about-night {
+  @include background-night();
+  color: set-text-color($primary-color);
+  &.about-day{
+      @include background-day();
+      color: set-text-color($day-color);
+  }
+}
+
+
+
+
 #about {
     * {
       box-sizing: border-box;
     }
-    @include background-all();
+
+    
+    
     box-sizing: border-box;
     cursor: url(../media/gallerie1/122867463-click-cursor-icon-cartoon-style.jpg), auto;
     h1 {
@@ -42,21 +56,30 @@
         'description-about description-about description-about';
         grid-template-columns: repeat(3, 1fr);
 
-        div{
-            background-color: rgba(lighten($primary-color,10), 0.6);
+        .box-about-night {
+            background-color: rgba(lighten($primary-color,30), 0.6);
             text-align: left;
             font-size: 0.9rem;
             padding: 15px ;
             line-height: 1.8rem;
          
             border: 2px solid transparent;
+            &.about-day {
+                background-color: rgba(darken($primary-color,10), 0.6);
+            }
 
 
             @include easeOut();
 
             &:hover {
                 background-color: darken($tercery-color, 35);
-                border: 2px solid lighten($primary-color,10);
+                color: set-text-color(darken($tercery-color, 35));
+                border: 2px solid lighten($primary-color,15);
+                &.about-day {
+                    background-color: lighten($tercery-color, 5);
+                    color: set-text-color(lighten($tercery-color, 5));
+                    border: 2px solid lighten($secondary-color,2);
+                }
             }
 
 

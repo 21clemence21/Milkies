@@ -1,4 +1,4 @@
-$primary-color:#000000;
+$primary-color:rgb(25, 23, 23);
 //$text-color: white;
 $secondary-color: #FFCC00;
 $tercery-color: #1A60F2;
@@ -6,6 +6,7 @@ $show-home-image: true;
 $home-image: url(../media/galaxy-infinity-milky-way-orbit-space-stars-1366710-pxhere.com.jpg);
 $background-opacity: 0.2;
 $light-opacity : 1;
+$day-color : white;
 
 
 
@@ -13,8 +14,12 @@ $light-opacity : 1;
     transition: all 0.5s ease-out;
 }
 
-@mixin background-all {
-     background-color: $primary-color ;
+@mixin background-night {
+     background-color: $primary-color;
+}
+
+@mixin background-day {
+    background-color: $day-color ;
 }
 
 @mixin background {
