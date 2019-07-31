@@ -341,9 +341,13 @@
 
 #milkies .container-team .team-box .txt-box-team h4 {
   color: #1A60F2;
-  background-color: #908686;
-  border: #1A60F2 1px solid;
-  width: 160px;
+  background-color: #e5e3e3;
+  border: #1A60F2 3px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 1vw;
   margin: auto;
   -webkit-transition: all 0.5s ease-out;

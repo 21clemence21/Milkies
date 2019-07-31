@@ -41,6 +41,4 @@ function toggleDayAbout() {
         sunAppear = false;
     }
 
-
-
 }
